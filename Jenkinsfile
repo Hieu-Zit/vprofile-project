@@ -1,12 +1,12 @@
 pipeline {
     agent any
-    tools{
+    tools {
         maven "MAVEN3"
         jdk  "OracleJDK8"
     }
     
-    environment(
-        SNAP_REPO= 'vprofile-snapshot'
+    environment (
+        SNAP_REPO = 'vprofile-snapshot'
         NEXUS_USER = 'admin'
         NEXUS_PASS = 'HloveH2001*'
         RELEASE_REPO = 'vprofile-release'
